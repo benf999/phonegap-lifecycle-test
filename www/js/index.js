@@ -2,7 +2,7 @@ var paused_count =0;
 var resumed_count = 0;
 var launched_count = 0;
 
-document.addEventListener("deviceready", onDeviceReady, false);
+document.addEventListener("deviceready", onDeviceReady, false); // LISTENING for when app is fully launched
 		
 	
 function updateDisplay() {
@@ -14,10 +14,10 @@ function updateDisplay() {
 
 // device APIs are available
 //
-    function onDeviceReady() {
+    function onDeviceReady() { // HANDLING when app is launched
 	
-	document.addEventListener("resume", onResume, false);
-	document.addEventListener("pause", onPause, false);
+	document.addEventListener("resume", onResume, false); // LISTENING for when app is resumed
+	document.addEventListener("pause", onPause, false); // LISTENING for when app is paused
 	
 	launched_count++;
 	updateDisplay();
@@ -26,7 +26,7 @@ function updateDisplay() {
     }
 
 
-    function onPause() {
+    function onPause() { // HANDLING when app is paused
 	
 	paused_count++;
 	updateDisplay();
@@ -35,7 +35,7 @@ function updateDisplay() {
     }
 	
 
-    function onResume() {
+    function onResume() { // HANDLING when app is resumed
 		
 	resumed_count++;
 	updateDisplay();
