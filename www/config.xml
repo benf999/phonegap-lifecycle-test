@@ -4,9 +4,9 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "mob.app.dev.lifecycle"
-        version   = "1.0.0">
+        version   = "1.2.0">
 
-    <name>Application Lifecycle Test</name>
+    <name>Application Lifecycle Test 1.2</name>
 
     <description>
         A sample application that counts the occurances of lifecycle events.
